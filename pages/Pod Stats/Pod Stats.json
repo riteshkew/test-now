@@ -28,38 +28,6 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "Pod Stats_fetch_closed_RICE_issues",
-              "name": "fetch_closed_RICE_issues",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "appsmith.store.currentPod"
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Pod Stats_fetch_feature_requests",
-              "name": "fetch_feature_requests",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "appsmith.store.currentPod"
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Pod Stats_fetch_top_RICE_issues",
-              "name": "fetch_top_RICE_issues",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "appsmith.store.currentPod"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
               "id": "Pod Stats_ReportUtils.initialise",
               "name": "ReportUtils.initialise",
               "collectionId": "Pod Stats_ReportUtils",
@@ -72,6 +40,16 @@
             }
           ],
           [
+            {
+              "id": "Pod Stats_fetch_closed_RICE_issues",
+              "name": "fetch_closed_RICE_issues",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "appsmith.store.currentPod"
+              ],
+              "timeoutInMillisecond": 10000
+            },
             {
               "id": "Pod Stats_fetch_closed_critical_issues",
               "name": "fetch_closed_critical_issues",
@@ -140,6 +118,26 @@
                 "bug_start_select.selectedOptionValue",
                 "appsmith.store.currentPod",
                 "bug_end_select.selectedOptionValue"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Pod Stats_fetch_feature_requests",
+              "name": "fetch_feature_requests",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "appsmith.store.currentPod"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Pod Stats_fetch_top_RICE_issues",
+              "name": "fetch_top_RICE_issues",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "appsmith.store.currentPod"
               ],
               "timeoutInMillisecond": 10000
             }
