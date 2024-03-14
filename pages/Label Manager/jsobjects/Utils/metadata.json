@@ -1,0 +1,20 @@
+{
+  "unpublishedCollection": {
+    "name": "Utils",
+    "pageId": "Label Manager",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [
+      {
+        "name": "labelOrder",
+        "value": "{\n  \"Team Managers Pod\": 1,\n  \"Actions Pod\": 9,\n  \"Platform Pod\": 8,\n  \"UI Building Pod\": 10,\n  \"UI Builders Pod\": 6,\n  \"App Viewers Pod\": 5,\n  \"FE Coders Pod\": 4,\n  \"BE Coders Pod\": 3,\n  \"New Developers Pod\": 2,\n  \"User Education Pod\": 7\n}"
+      }
+    ],
+    "userPermissions": []
+  },
+  "id": "Label Manager_Utils",
+  "deleted": false,
+  "gitSyncId": "60d72903ee9aa1792c5bf168_61c4343be89bc475f3cd114e"
+}

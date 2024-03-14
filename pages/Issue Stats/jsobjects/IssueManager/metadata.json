@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "IssueManager",
+    "pageId": "Issue Stats",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Issue Stats_IssueManager",
+  "deleted": false,
+  "gitSyncId": "60d72903ee9aa1792c5bf168_61cc0397a4437918c01f7bc5"
+}

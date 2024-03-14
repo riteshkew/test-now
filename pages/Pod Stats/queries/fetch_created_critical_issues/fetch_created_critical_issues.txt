@@ -1,0 +1,2 @@
+SELECT issue_number, title, 'Created' as series, label_arr, to_char(created_date, 'YYYY-MM') as full_date, to_char(created_date, 'Mon') as month FROM github_issues where 'Critical' = ANY(label_arr) and '{{appsmith.store.currentPod}}' = ANY(label_arr) 
+and 'Bug' = ANY(label_arr) and to_char(created_date, 'YYYY-MM') >= '{{bug_start_select.selectedOptionValue}}' and to_char(created_date, 'YYYY-MM') <= '{{bug_end_select.selectedOptionValue}}' GROUP BY id, full_date order by full_date,issue_number

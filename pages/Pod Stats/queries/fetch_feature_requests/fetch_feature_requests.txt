@@ -1,0 +1,24 @@
+SELECT
+    github_issues.issue_number,
+    count(aforce_issue_upvote.id) as upvote_count,
+    COALESCE (github_issues.total_reactions, 0) as github_reactions_count,
+    COALESCE(github_issues.unique_commentors, 0) as github_comments_count,
+    GREATEST(
+        MAX(aforce_issue_upvote.created_at),
+        MAX(global_issues.created_at)
+    ) as updated_at,
+		github_issues.title as github_issue_title,
+		github_issues.state
+FROM
+    github_issues
+    left join global_issues on github_issues.id = global_issues.github_issue_id
+    left join aforce_issue_upvote on global_issues.id = aforce_issue_upvote.issue_id
+WHERE
+'{{appsmith.store.currentPod}}' = ANY(github_issues.label_arr) and
+('Enhancement' = ANY(github_issues.label_arr) or 'Epic' = ANY(github_issues.label_arr))
+		and github_issues.state != 'closed'
+GROUP BY
+    global_issues.id,
+    github_issues.id
+ORDER BY github_reactions_count desc, upvote_count desc, github_comments_count desc
+OFFSET 0 LIMIT 30;

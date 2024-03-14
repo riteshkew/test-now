@@ -1,0 +1,24 @@
+{
+  "unpublishedCollection": {
+    "name": "Configs",
+    "pageId": "Issue Stats",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [
+      {
+        "name": "pods",
+        "value": "[{\n  label: \"App Viewers Pod\",\n  value: \"App Viewers Pod\"\n}, {\n  label: \"UI Builders Pod\",\n  value: \"UI Builders Pod\"\n}, {\n  label: \"Team Managers Pod\",\n  value: \"Team Managers Pod\"\n}, {\n  label: \"New Developers Pod\",\n  value: \"New Developers Pod\"\n}, {\n  label: \"FE Coders Pod\",\n  value: \"FE Coders Pod\"\n}, {\n  label: \"BE Coders Pod\",\n  value: \"BE Coders Pod\"\n}]"
+      },
+      {
+        "name": "myVar2",
+        "value": "{}"
+      }
+    ],
+    "userPermissions": []
+  },
+  "id": "Issue Stats_Configs",
+  "deleted": false,
+  "gitSyncId": "60d72903ee9aa1792c5bf168_61c4343ce89bc475f3cd18f0"
+}

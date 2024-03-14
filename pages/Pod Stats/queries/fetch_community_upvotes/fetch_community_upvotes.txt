@@ -1,0 +1,1 @@
+SELECT * FROM public."aforce_issue_upvote" WHERE issue_id = {{QueryTable.selectedRow.id}} ORDER BY created_at DESC;

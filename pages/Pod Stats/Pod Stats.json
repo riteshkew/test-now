@@ -1,0 +1,211 @@
+{
+  "unpublishedPage": {
+    "name": "Pod Stats",
+    "slug": "pod-stats",
+    "layouts": [
+      {
+        "viewMode": false,
+        "dsl": {
+          "widgetName": "MainContainer",
+          "backgroundColor": "none",
+          "rightColumn": 1224,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 4910,
+          "containerStyle": "none",
+          "snapRows": 88,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 89,
+          "minHeight": 890,
+          "parentColumnSpace": 1,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0
+        },
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "Pod Stats_fetch_closed_RICE_issues",
+              "name": "fetch_closed_RICE_issues",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "appsmith.store.currentPod"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Pod Stats_fetch_feature_requests",
+              "name": "fetch_feature_requests",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "appsmith.store.currentPod"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Pod Stats_fetch_top_RICE_issues",
+              "name": "fetch_top_RICE_issues",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "appsmith.store.currentPod"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Pod Stats_ReportUtils.initialise",
+              "name": "ReportUtils.initialise",
+              "collectionId": "Pod Stats_ReportUtils",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async () => {\n  if (appsmith.store.currentPod === undefined) await storeValue('currentPod', \"App Viewers Pod\");\n  await ReportUtils.fetchQualityData();\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Pod Stats_fetch_closed_critical_issues",
+              "name": "fetch_closed_critical_issues",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "bug_start_select.selectedOptionValue",
+                "appsmith.store.currentPod",
+                "bug_end_select.selectedOptionValue"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Pod Stats_fetch_closed_high_issues",
+              "name": "fetch_closed_high_issues",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "bug_start_select.selectedOptionValue",
+                "appsmith.store.currentPod",
+                "bug_end_select.selectedOptionValue"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Pod Stats_fetch_community_queries",
+              "name": "fetch_community_queries",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "moment(query_start_select.selectedOptionValue, \"YYYY-MM\").toISOString()",
+                "appsmith.store.selectedQueryLabel",
+                "moment(query_end_select.selectedOptionValue, \"YYYY-MM\").add(1, 'month').toISOString()",
+                "appsmith.store.currentPod"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Pod Stats_fetch_community_upvotes",
+              "name": "fetch_community_upvotes",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "QueryTable.selectedRow.id"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Pod Stats_fetch_created_critical_issues",
+              "name": "fetch_created_critical_issues",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "bug_start_select.selectedOptionValue",
+                "appsmith.store.currentPod",
+                "bug_end_select.selectedOptionValue"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Pod Stats_fetch_created_high_issues",
+              "name": "fetch_created_high_issues",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "bug_start_select.selectedOptionValue",
+                "appsmith.store.currentPod",
+                "bug_end_select.selectedOptionValue"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Pod Stats_fetch_community_queries_count",
+              "name": "fetch_community_queries_count",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "moment(query_start_select.selectedOptionValue, \"YYYY-MM\").toISOString()",
+                "moment(query_end_select.selectedOptionValue, \"YYYY-MM\").add(1, 'month').toISOString()",
+                "appsmith.store.currentPod"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Pod Stats_successfulActivationFunnel",
+              "name": "successfulActivationFunnel",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [
+                "moment(impact_start_date.selectedOptionValue, \"YYYY-MM\").format(\"YYYY-MM-DD\")",
+                "moment(impact_end_date.selectedOptionValue, \"YYYY-MM\").endOf('month').format(\"YYYY-MM-DD\")"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Pod Stats_successfulBuildingFunnel",
+              "name": "successfulBuildingFunnel",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [
+                "moment(impact_start_date.selectedOptionValue, \"YYYY-MM\").format(\"YYYY-MM-DD\")",
+                "moment(impact_end_date.selectedOptionValue, \"YYYY-MM\").endOf('month').format(\"YYYY-MM-DD\")"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Pod Stats_successfulQueryExecutionFunnel",
+              "name": "successfulQueryExecutionFunnel",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [
+                "moment(impact_start_date.selectedOptionValue, \"YYYY-MM\").format(\"YYYY-MM-DD\")",
+                "moment(impact_end_date.selectedOptionValue, \"YYYY-MM\").endOf('month').format(\"YYYY-MM-DD\")"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
+        "layoutOnLoadActionErrors": [],
+        "validOnPageLoadActions": true,
+        "id": "Pod Stats",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
+      }
+    ],
+    "userPermissions": [],
+    "policies": [],
+    "isHidden": false
+  },
+  "deleted": false,
+  "gitSyncId": "62b33cf120ae3225cef0fe9e_62b33dd120ae3225cef0ff03"
+}

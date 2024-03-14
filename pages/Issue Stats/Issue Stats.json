@@ -1,0 +1,216 @@
+{
+  "unpublishedPage": {
+    "name": "Issue Stats",
+    "slug": "issue-stats",
+    "layouts": [
+      {
+        "viewMode": false,
+        "dsl": {
+          "widgetName": "MainContainer",
+          "backgroundColor": "none",
+          "rightColumn": 1160,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 1280,
+          "containerStyle": "none",
+          "snapRows": 88,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 89,
+          "minHeight": 890,
+          "parentColumnSpace": 1,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0
+        },
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "Issue Stats_fetch_closed_crit_issue_age",
+              "name": "fetch_closed_crit_issue_age",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "end_date_picker.formattedDate",
+                "start_date_picker.formattedDate",
+                "pod_select.selectedOptionValue ? \" and '\" + pod_select.selectedOptionValue + \"' = ANY(label_arr)\" : \"\""
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Issue Stats_fetch_closed_critical_issues",
+              "name": "fetch_closed_critical_issues",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "end_date_picker.formattedDate",
+                "start_date_picker.formattedDate",
+                "pod_select.selectedOptionValue ? \" and '\" + pod_select.selectedOptionValue + \"' = ANY(label_arr)\" : \"\""
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Issue Stats_fetch_closed_epic_issue_age",
+              "name": "fetch_closed_epic_issue_age",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "end_date_picker.formattedDate",
+                "start_date_picker.formattedDate",
+                "pod_select.selectedOptionValue ? \" and '\" + pod_select.selectedOptionValue + \"' = ANY(label_arr)\" : \"\""
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Issue Stats_fetch_closed_epic_issues",
+              "name": "fetch_closed_epic_issues",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "end_date_picker.formattedDate",
+                "start_date_picker.formattedDate",
+                "pod_select.selectedOptionValue ? \" and '\" + pod_select.selectedOptionValue + \"' = ANY(label_arr)\" : \"\""
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Issue Stats_fetch_closed_high_issue_age",
+              "name": "fetch_closed_high_issue_age",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "end_date_picker.formattedDate",
+                "start_date_picker.formattedDate",
+                "pod_select.selectedOptionValue ? \" and '\" + pod_select.selectedOptionValue + \"' = ANY(label_arr)\" : \"\""
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Issue Stats_fetch_closed_high_issues",
+              "name": "fetch_closed_high_issues",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "end_date_picker.formattedDate",
+                "start_date_picker.formattedDate",
+                "pod_select.selectedOptionValue ? \" and '\" + pod_select.selectedOptionValue + \"' = ANY(label_arr)\" : \"\""
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Issue Stats_fetch_created_critical_issues",
+              "name": "fetch_created_critical_issues",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "end_date_picker.formattedDate",
+                "start_date_picker.formattedDate",
+                "pod_select.selectedOptionValue ? \" and '\" + pod_select.selectedOptionValue + \"' = ANY(label_arr)\" : \"\""
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Issue Stats_fetch_created_epic_issues",
+              "name": "fetch_created_epic_issues",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "pod_select.selectedOptionValue ? \"and '\" + pod_select.selectedOptionValue + \"' = ANY(label_arr)\" : \"\"",
+                "end_date_picker.formattedDate",
+                "start_date_picker.formattedDate"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Issue Stats_fetch_created_high_issues",
+              "name": "fetch_created_high_issues",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "end_date_picker.formattedDate",
+                "start_date_picker.formattedDate",
+                "pod_select.selectedOptionValue ? \" and '\" + pod_select.selectedOptionValue + \"' = ANY(label_arr)\" : \"\""
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Issue Stats_fetch_open_crit_issue_age",
+              "name": "fetch_open_crit_issue_age",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "pod_select.selectedOptionValue ? \"and '\" + pod_select.selectedOptionValue + \"' = ANY(label_arr)\" : \"\""
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Issue Stats_fetch_open_epic_issue_age",
+              "name": "fetch_open_epic_issue_age",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "pod_select.selectedOptionValue ? \" and '\" + pod_select.selectedOptionValue + \"' = ANY(label_arr)\" : \"\""
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Issue Stats_fetch_open_high_issue_age",
+              "name": "fetch_open_high_issue_age",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "pod_select.selectedOptionValue ? \" and '\" + pod_select.selectedOptionValue + \"' = ANY(label_arr)\" : \"\""
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Issue Stats_fetch_open_crit_issues",
+              "name": "fetch_open_crit_issues",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "pod_select.selectedOptionValue ? \"and '\" + pod_select.selectedOptionValue + \"' = ANY(label_arr)\" : \"\""
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Issue Stats_fetch_open_epic_issues",
+              "name": "fetch_open_epic_issues",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "pod_select.selectedOptionValue ? \"and '\" + pod_select.selectedOptionValue + \"' = ANY(label_arr)\" : \"\""
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Issue Stats_fetch_open_high_issues",
+              "name": "fetch_open_high_issues",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "pod_select.selectedOptionValue ? \"and '\" + pod_select.selectedOptionValue + \"' = ANY(label_arr)\" : \"\""
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
+        "layoutOnLoadActionErrors": [],
+        "validOnPageLoadActions": true,
+        "id": "Issue Stats",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
+      }
+    ],
+    "userPermissions": [],
+    "policies": [],
+    "isHidden": false
+  },
+  "deleted": false,
+  "gitSyncId": "60d72903ee9aa1792c5bf168_61c433d4e89bc475f3cbc6cd"
+}

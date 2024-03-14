@@ -1,0 +1,186 @@
+{
+    "boxShadow": "none",
+    "widgetName": "Chart1Copy",
+    "allowScroll": false,
+    "displayName": "Chart",
+    "iconSVG": "/static/media/icon.6adbe31e.svg",
+    "topRow": 6,
+    "bottomRow": 78,
+    "parentRowSpace": 10,
+    "type": "CHART_WIDGET",
+    "hideCard": false,
+    "chartData": {
+        "q5i1fw8epv": {
+            "data": "{{appsmith.store.stats.ui_builders}}",
+            "seriesName": "UI Builders"
+        },
+        "8u2bldixov": {
+            "data": "{{appsmith.store.stats.team_managers}}",
+            "seriesName": "Team Managers"
+        },
+        "o2oj6qkc04": {
+            "data": "{{appsmith.store.stats.fe_coders}}",
+            "seriesName": "FE Coders"
+        },
+        "kax18jy339": {
+            "data": "{{appsmith.store.stats.be_coders}}",
+            "seriesName": "BE Coders"
+        },
+        "leoh80jzb8": {
+            "data": "{{appsmith.store.stats.app_viewers}}",
+            "seriesName": "App Viewers"
+        },
+        "7o0omo3qvh": {
+            "data": "{{appsmith.store.stats.new_developers}}",
+            "seriesName": "New Developers"
+        }
+    },
+    "animateLoading": true,
+    "parentColumnSpace": 14.6875,
+    "dynamicTriggerPathList": [],
+    "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+    "leftColumn": 0,
+    "dynamicBindingPathList": [
+        {"key": "chartData.q5i1fw8epv.data"},
+        {"key": "chartData.8u2bldixov.data"},
+        {"key": "chartData.7o0omo3qvh.data"},
+        {"key": "chartData.o2oj6qkc04.data"},
+        {"key": "chartData.kax18jy339.data"},
+        {"key": "chartData.leoh80jzb8.data"},
+        {"key": "accentColor"},
+        {"key": "fontFamily"}
+    ],
+    "customFusionChartConfig": {
+        "type": "column2d",
+        "dataSource": {
+            "data": [
+                {
+                    "label": "Product1",
+                    "value": 20000
+                },
+                {
+                    "label": "Product2",
+                    "value": 22000
+                },
+                {
+                    "label": "Product3",
+                    "value": 32000
+                }
+            ],
+            "chart": {
+                "yAxisName": "Revenue($)",
+                "xAxisName": "Product Line",
+                "caption": "Sales Report",
+                "theme": "fusion"
+            }
+        }
+    },
+    "customEChartConfig": {
+        "yAxis": [{"type": "value"}],
+        "xAxis": [{"type": "category"}],
+        "legend": {
+            "top": 40,
+            "type": "scroll"
+        },
+        "grid": {
+            "top": 100,
+            "left": 15,
+            "bottom": 30,
+            "right": 15,
+            "containLabel": true
+        },
+        "series": [
+            {
+                "stack": "Search Engine",
+                "type": "bar"
+            },
+            {
+                "stack": "Search Engine",
+                "type": "bar"
+            },
+            {
+                "stack": "Search Engine",
+                "type": "bar"
+            }
+        ],
+        "tooltip": {
+            "axisPointer": {"type": "shadow"},
+            "trigger": "axis"
+        },
+        "title": {
+            "left": "center",
+            "text": "Search Engine Usage",
+            "textStyle": {
+                "overflow": "truncate",
+                "width": 200
+            }
+        },
+        "dataset": {"source": [
+            [
+                "Day",
+                "Baidu",
+                "Google",
+                "Bing"
+            ],
+            [
+                "Mon",
+                620,
+                120,
+                60
+            ],
+            [
+                "Tue",
+                732,
+                132,
+                72
+            ],
+            [
+                "Wed",
+                701,
+                101,
+                71
+            ],
+            [
+                "Thu",
+                734,
+                134,
+                74
+            ],
+            [
+                "Fri",
+                1090,
+                290,
+                190
+            ],
+            [
+                "Sat",
+                1130,
+                230,
+                130
+            ],
+            [
+                "Sun",
+                1120,
+                220,
+                110
+            ]
+        ]}
+    },
+    "key": "z0vsaqi6fm",
+    "showDataPointLabel": false,
+    "labelTextSize": "0.875rem",
+    "rightColumn": 64,
+    "widgetId": "dx9775xejo",
+    "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+    "isVisible": true,
+    "version": 1,
+    "parentId": "k03ucp00d5",
+    "labelOrientation": "auto",
+    "renderMode": "CANVAS",
+    "isLoading": false,
+    "yAxisName": "Revenue($)",
+    "chartName": "",
+    "borderRadius": "0px",
+    "xAxisName": "Product Line",
+    "chartType": "COLUMN_CHART"
+}

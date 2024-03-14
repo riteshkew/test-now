@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "LabelConfigDao",
+    "pageId": "Label Manager",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Label Manager_LabelConfigDao",
+  "deleted": false,
+  "gitSyncId": "60d72903ee9aa1792c5bf168_61c4343be89bc475f3cd1147"
+}

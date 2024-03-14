@@ -1,0 +1,1 @@
+SELECT count(*) FROM github_issues where '{{this.params.pod || "App Viewers Pod"}}' = ANY(label_arr) and 'Critical' = ANY(label_arr) and created_date >= '{{start_date_picker.formattedDate}}' and created_date <= '{{end_date_picker.formattedDate}}'

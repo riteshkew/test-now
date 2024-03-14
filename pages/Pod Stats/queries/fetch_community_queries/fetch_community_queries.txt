@@ -1,0 +1,23 @@
+SELECT
+    global_issues.id,
+    global_issues.type,
+    global_issues.title,
+    global_issues.description,
+    count(aforce_issue_upvote.id) as upvote_count,
+    GREATEST(
+        MAX(aforce_issue_upvote.created_at),
+        MAX(global_issues.created_at)
+    ) as updated_at
+FROM
+    global_issues
+    left join github_issues on github_issues.id = global_issues.github_issue_id
+    left join aforce_issue_upvote on global_issues.id = aforce_issue_upvote.issue_id
+WHERE aforce_issue_upvote.created_at >= '{{moment(query_start_select.selectedOptionValue, "YYYY-MM").toISOString()}}' and aforce_issue_upvote.created_at <= '{{moment(query_end_select.selectedOptionValue, "YYYY-MM").add(1, 'month').toISOString()}}' and global_issues.state != 'DELETED'
+				and global_issues.type IN ('Question','Troubleshooting')
+		and '{{appsmith.store.currentPod}}' = ANY(global_issues.labels)
+		and '{{appsmith.store.selectedQueryLabel}}' = ANY(global_issues.labels)
+GROUP BY
+    global_issues.id,
+    github_issues.id
+ORDER BY upvote_count desc
+OFFSET 0 LIMIT 100;

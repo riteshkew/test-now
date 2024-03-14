@@ -1,0 +1,1 @@
+SELECT AVG(now() :: date - created_date :: date) as AVGage FROM github_issues where 'Critical' = ANY(label_arr) {{pod_select.selectedOptionValue ? "and '" + pod_select.selectedOptionValue + "' = ANY(label_arr)" : ""}} and state = 'open'

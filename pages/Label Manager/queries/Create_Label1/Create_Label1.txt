@@ -1,0 +1,5 @@
+{
+	"name": {{label_name.text}},
+	"description": {{label_desc.text}},
+	"color": {{color_input.text.substr(1)}}
+}

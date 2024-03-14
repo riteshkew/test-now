@@ -1,0 +1,20 @@
+{
+  "unpublishedCollection": {
+    "name": "ReportUtils",
+    "pageId": "Pod Stats",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [
+      {
+        "name": "blacklistLabels",
+        "value": "[\"Bug\", \"Enhancement\", \"High\", \"Critical\", \"Low\", \"Documentation\"]"
+      }
+    ],
+    "userPermissions": []
+  },
+  "id": "Pod Stats_ReportUtils",
+  "deleted": false,
+  "gitSyncId": "62b33cf120ae3225cef0fe9e_62b5712e20ae3225cef19a5f"
+}

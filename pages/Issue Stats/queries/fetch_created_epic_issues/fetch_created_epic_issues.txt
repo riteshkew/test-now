@@ -1,0 +1,1 @@
+SELECT count(*) FROM github_issues where 'Epic' = ANY(label_arr) {{pod_select.selectedOptionValue ? "and '" + pod_select.selectedOptionValue + "' = ANY(label_arr)" : ""}} and created_date >= '{{start_date_picker.formattedDate}}' and created_date <= '{{end_date_picker.formattedDate}}'

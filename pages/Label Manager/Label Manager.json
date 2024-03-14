@@ -1,0 +1,67 @@
+{
+  "unpublishedPage": {
+    "name": "Label Manager",
+    "slug": "label-manager",
+    "layouts": [
+      {
+        "viewMode": false,
+        "dsl": {
+          "widgetName": "MainContainer",
+          "backgroundColor": "none",
+          "rightColumn": 1160,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 1990,
+          "containerStyle": "none",
+          "snapRows": 129,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 89,
+          "minHeight": 1970,
+          "parentColumnSpace": 1,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0
+        },
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "Label Manager_Fetch_Label_Config",
+              "name": "Fetch_Label_Config",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 100000
+            }
+          ],
+          [
+            {
+              "id": "Label Manager_Fetch_Labels",
+              "name": "Fetch_Labels",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [
+                "Table1.pageNo",
+                "Table1.pageSize"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
+        "layoutOnLoadActionErrors": [],
+        "validOnPageLoadActions": true,
+        "id": "Label Manager",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
+      }
+    ],
+    "userPermissions": [],
+    "policies": [],
+    "isHidden": false
+  },
+  "deleted": false,
+  "gitSyncId": "60d72903ee9aa1792c5bf168_61c433aee89bc475f3cb96e7"
+}

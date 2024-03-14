@@ -1,0 +1,1 @@
+select state, title, issue_number, label_arr, (reach * impact / effort) as score, to_char(created_date, 'YYYY-MM-DD') as created_date from github_issues where effort is NOT NULL and effort != 0 and state = 'open' and '{{appsmith.store.currentPod}}' = ANY(label_arr) order by score desc limit 100

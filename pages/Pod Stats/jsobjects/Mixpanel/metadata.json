@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "Mixpanel",
+    "pageId": "Pod Stats",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Pod Stats_Mixpanel",
+  "deleted": false,
+  "gitSyncId": "62b33cf120ae3225cef0fe9e_62cbd49b01213a676a3593d1"
+}

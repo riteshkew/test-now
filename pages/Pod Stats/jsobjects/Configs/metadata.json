@@ -1,0 +1,20 @@
+{
+  "unpublishedCollection": {
+    "name": "Configs",
+    "pageId": "Pod Stats",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [
+      {
+        "name": "platforms",
+        "value": "{\n  INTERCOM: 'https://cdn.worldvectorlogo.com/logos/intercom-2.svg',\n  DISCORD: 'https://cdn.worldvectorlogo.com/logos/discord-6.svg',\n  GITHUB: 'https://cdn.worldvectorlogo.com/logos/github-icon-1.svg',\n  APPSMITH_FORUM: 'https://i.ibb.co/7jhmdvh/Group-8554.png',\n  OTHERS: 'https://cdn.worldvectorlogo.com/logos/roadrunner.svg'\n}"
+      }
+    ],
+    "userPermissions": []
+  },
+  "id": "Pod Stats_Configs",
+  "deleted": false,
+  "gitSyncId": "62b33cf120ae3225cef0fe9e_62b41aef20ae3225cef13391"
+}

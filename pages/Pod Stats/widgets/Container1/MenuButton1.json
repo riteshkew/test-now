@@ -1,0 +1,108 @@
+{
+    "isCompact": false,
+    "boxShadow": "none",
+    "widgetName": "MenuButton1",
+    "displayName": "Menu Button",
+    "iconSVG": "/static/media/icon.0341d17d.svg",
+    "topRow": 0,
+    "bottomRow": 6,
+    "parentRowSpace": 10,
+    "type": "MENU_BUTTON_WIDGET",
+    "hideCard": false,
+    "animateLoading": true,
+    "parentColumnSpace": 17.625,
+    "dynamicTriggerPathList": [
+        {"key": "menuItems.menuItem1.onClick"},
+        {"key": "menuItems.menuItem2.onClick"},
+        {"key": "menuItems.menuItem3.onClick"},
+        {"key": "menuItems.menuItemz8gtey0ta7.onClick"},
+        {"key": "menuItems.menuItemg9y7mhtlzh.onClick"},
+        {"key": "menuItems.menuItemi2ogt4qkk0.onClick"},
+        {"key": "menuItems.menuItem4ezz3hy2c5.onClick"}
+    ],
+    "leftColumn": 60,
+    "dynamicBindingPathList": [{"key": "borderRadius"}],
+    "isDisabled": false,
+    "key": "31mpmn61ie",
+    "isDeprecated": false,
+    "rightColumn": 64,
+    "iconName": "menu",
+    "menuVariant": "PRIMARY",
+    "widgetId": "hbfx3xx13q",
+    "menuItems": {
+        "menuItemz8gtey0ta7": {
+            "onClick": "{{ReportUtils.changePod('FE Coders Pod')}}",
+            "widgetId": "5z1yempb2a",
+            "index": 3,
+            "id": "menuItemz8gtey0ta7",
+            "label": "FE Coders Pod",
+            "isDisabled": false,
+            "isVisible": true
+        },
+        "menuItem1": {
+            "onClick": "{{ReportUtils.changePod('App Viewers Pod')}}",
+            "widgetId": "",
+            "index": 0,
+            "label": "App Viewers Pod",
+            "id": "menuItem1",
+            "isVisible": true,
+            "isDisabled": false
+        },
+        "menuItem4ezz3hy2c5": {
+            "onClick": "{{ReportUtils.changePod('DevOps Pod')}}",
+            "widgetId": "1ux4ozzhtt",
+            "index": 6,
+            "id": "menuItem4ezz3hy2c5",
+            "label": "Dev Ops Pod",
+            "isDisabled": false,
+            "isVisible": true
+        },
+        "menuItem3": {
+            "onClick": "{{ReportUtils.changePod('Team Managers Pod')}}",
+            "widgetId": "",
+            "index": 2,
+            "label": "Team Managers Pod",
+            "id": "menuItem3",
+            "isVisible": true,
+            "isDisabled": false
+        },
+        "menuItem2": {
+            "onClick": "{{ReportUtils.changePod('New Developers Pod')}}",
+            "widgetId": "",
+            "index": 1,
+            "label": "New Developers Pod",
+            "id": "menuItem2",
+            "isVisible": true,
+            "isDisabled": false
+        },
+        "menuItemg9y7mhtlzh": {
+            "onClick": "{{ReportUtils.changePod('BE Coders Pod')}}",
+            "widgetId": "3k6ca0ptdj",
+            "index": 4,
+            "id": "menuItemg9y7mhtlzh",
+            "label": "BE Coders Pod",
+            "isDisabled": false,
+            "isVisible": true
+        },
+        "menuItemi2ogt4qkk0": {
+            "onClick": "{{ReportUtils.changePod('UI Builders Pod')}}",
+            "widgetId": "sav9cwkyqt",
+            "index": 5,
+            "id": "menuItemi2ogt4qkk0",
+            "label": "UI Builders Pod",
+            "isDisabled": false,
+            "isVisible": true
+        }
+    },
+    "isVisible": true,
+    "label": "",
+    "version": 1,
+    "parentId": "7jyr2eu3fr",
+    "renderMode": "CANVAS",
+    "isLoading": false,
+    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+    "menuColor": "#f0fdf4",
+    "menuItemsSource": "STATIC",
+    "iconAlign": "left",
+    "placement": "CENTER"
+}

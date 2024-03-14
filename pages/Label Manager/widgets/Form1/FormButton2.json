@@ -1,0 +1,33 @@
+{
+    "resetFormOnClick": true,
+    "boxShadow": "none",
+    "widgetName": "FormButton2",
+    "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+    "displayName": "FormButton",
+    "iconSVG": "/static/media/icon.c8f649ed.svg",
+    "topRow": 54,
+    "bottomRow": 58,
+    "type": "FORM_BUTTON_WIDGET",
+    "hideCard": true,
+    "dynamicTriggerPathList": [],
+    "leftColumn": 30,
+    "dynamicBindingPathList": [
+        {"key": "borderRadius"},
+        {"key": "buttonColor"}
+    ],
+    "text": "Reset",
+    "key": "1t0n0j260m",
+    "labelTextSize": "0.875rem",
+    "rightColumn": 46,
+    "isDefaultClickDisabled": true,
+    "widgetId": "z0tqcajvjq",
+    "isVisible": true,
+    "version": 1,
+    "recaptchaType": "V3",
+    "parentId": "madg4mwqyr",
+    "renderMode": "CANVAS",
+    "isLoading": false,
+    "disabledWhenInvalid": false,
+    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+    "buttonVariant": "SECONDARY"
+}
